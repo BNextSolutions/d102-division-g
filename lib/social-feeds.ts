@@ -2,12 +2,12 @@ export type SocialFeed = { id:string; title:string; platform:'facebook'|'instagr
 // Add owner-supplied public Facebook Page URLs or Instagram post/reel URLs.
 // The order below is the display order; do not infer post dates from this order.
 export const socialFeeds:SocialFeed[]=[{id:'division-g-facebook',title:'District 102 Division G · Meeting updates',platform:'facebook',url:'https://www.facebook.com/tmd102divg'}];
-export function socialEmbedUrl(feed:SocialFeed):string|null{
+export function socialEmbedUrl(feed:SocialFeed,width=500):string|null{
   try{
     const url=new URL(feed.url);
     if(url.protocol!=='https:')return null;
     if(feed.platform==='facebook'&&['facebook.com','www.facebook.com'].includes(url.hostname)&&url.pathname!=='/'){
-      const params=new URLSearchParams({href:url.href,tabs:'timeline',width:'500',height:'600',small_header:'true',adapt_container_width:'true',hide_cover:'false',show_facepile:'false'});
+      const params=new URLSearchParams({href:url.href,tabs:'timeline',width:String(Math.max(180,Math.min(500,Math.floor(width)))),height:'600',small_header:'true',adapt_container_width:'true',hide_cover:'false',show_facepile:'false'});
       return `https://www.facebook.com/plugins/page.php?${params}`;
     }
     if(feed.platform==='instagram'&&['instagram.com','www.instagram.com'].includes(url.hostname)){

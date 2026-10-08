@@ -83,3 +83,7 @@ The Journal menu retains its name and includes two Mandarin articles and two Bah
 ## Google Analytics 4
 
 Set NEXT_PUBLIC_GA_MEASUREMENT_ID to the owner’s GA4 web stream ID (G-...) in Vercel Production and redeploy. Invalid or absent IDs leave analytics disabled. Google tag loads after the page becomes interactive. Enable Enhanced measurement, including browser history page changes, in the GA4 web stream to measure Next.js navigation; no manual page-view handler is added to duplicate that tracking. WhatsApp links emit whatsapp_enquiry_click with the page path, not the phone number or draft message. This event measures a button click, not a sent message or confirmed lead. Configure it as a key event in GA4 if desired. Verify events in Realtime/DebugView after supplying the ID.
+
+## Latest meeting social embeds
+
+`/latest-meeting` uses a reusable first-party `components/social-feed.tsx` module, with no paid widget or extra dependency. Add public Facebook Page URLs and Instagram post/reel permalinks to `lib/social-feeds.ts` using the documented type, then commit and deploy. Facebook embeds request the Page timeline; Instagram entries are individually curated posts, not automatic profile feed synchronization. Instagram profile URLs are not valid post embeds. The configuration starts empty until the owner supplies URLs. Embeds are lazy-loaded and have source links for unavailable or restricted content. They depend on public sharing and platform embed support. Meeting dates are not invented or inferred.

@@ -77,3 +77,5 @@ WhatsApp enquiries now use 601160676283. Homlux was removed at the owner’s req
 ## Confirmed meeting languages
 
 The owner confirmed on 9 October 2026 that 15 clubs conduct meetings in English and Kelab Toastmasters Bahasa Melayu Johor Darul Ta’zim conducts meetings in Bahasa Melayu. Mandarin content is outreach for Chinese-speaking prospective visitors, not a claim of Mandarin meetings. Language filters, club pages, FAQs, visitor guidance and outreach copy reflect these confirmed languages.
+
+The Journal menu retains its name and includes two Mandarin articles and two Bahasa Melayu articles alongside the English guides. Article pages declare their content language and use localized visitor calls to action.

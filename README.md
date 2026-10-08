@@ -73,3 +73,7 @@ Meeting schedules, meeting modes, listed locations, and membership access for 16
 ## 9 October 2026 update
 
 WhatsApp enquiries now use 601160676283. Homlux was removed at the owner’s request; the directory and sitemap contain 16 clubs. The homepage includes Mandarin and Bahasa Melayu invitations with language-specific WhatsApp drafts. These invitations encourage language practice, communication and leadership without assigning unconfirmed meeting languages to clubs. The externally managed Google My Maps remains maintained by its owner.
+
+## Confirmed meeting languages
+
+The owner confirmed on 9 October 2026 that 15 clubs conduct meetings in English and Kelab Toastmasters Bahasa Melayu Johor Darul Ta’zim conducts meetings in Bahasa Melayu. Mandarin content is outreach for Chinese-speaking prospective visitors, not a claim of Mandarin meetings. Language filters, club pages, FAQs, visitor guidance and outreach copy reflect these confirmed languages.

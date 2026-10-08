@@ -65,3 +65,7 @@ Before public launch, confirm official Division G status and branding, verify cl
 
 Dependency installation completed with zero reported vulnerabilities. TypeScript checking and the Next.js 16.4.0 production build passed locally and on Vercel. The generated package-lock.json records the installed versions. Desktop and mobile browser checks passed, including directory interaction, no mobile horizontal overflow, and no observed runtime errors. All seven content routes returned HTTP 200 locally; unknown club/page routes returned HTTP 404. The production homepage returned HTTP 200 without authentication. Vercel is connected to the GitHub repository for future deployments.
 
+
+## Club workbook import
+
+Meeting schedules, meeting modes, listed locations, and membership access for 16 clubs were imported on 8 October 2026 from the owner-supplied workbook (https://docs.google.com/spreadsheets/d/183qVX__qCmhieQdi8r0YPvSnIdlf-hRv/edit). Names and numbers match the existing roster. The detailed By Day tab provides times and membership access; SY provides club numbers. Homlux is absent and remains pending. FLEX frequency and Johor Jaya venue conflicts are explicitly flagged. Iskandar Puteri is listed as online with a reference address, not a confirmed walk-in venue. Facebook page names are displayed without invented URLs. Meeting languages are not supplied. The workbook itself is not committed.

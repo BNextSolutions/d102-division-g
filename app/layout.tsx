@@ -1,0 +1,7 @@
+import type { Metadata } from 'next';
+import Link from 'next/link';
+import './globals.css';
+export const metadata: Metadata = { title: { default: 'Division G • District 102 Toastmasters', template: '%s | Division G' }, description: 'Find your Toastmasters community in District 102 Division G. Explore clubs and practical ideas for speaking and leadership.' };
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+  return <html lang="en"><body><a className="skip" href="#main">Skip to content</a><header><Link href="/" className="brand"><span className="brand-mark">G<span>102</span></span><span>DIVISION G<small>DISTRICT 102 · TOASTMASTERS</small></span></Link><nav aria-label="Main navigation"><Link href="/clubs">Find a club</Link><Link href="/blog">Journal</Link><Link href="/about">About us</Link></nav><Link className="button compact" href="/clubs">Find your community <span>↗</span></Link></header><main id="main">{children}</main><footer><div><Link href="/" className="footer-title">A space to find your voice.</Link><p>Toastmasters · District 102 · Division G</p></div><div><Link href="/clubs">Club directory</Link><Link href="/blog">Journal</Link><a href="https://d102tm.org/" target="_blank" rel="noreferrer">District 102 ↗</a></div><p className="fine">Division G community website concept. Club listings require current roster verification. Toastmasters names belong to their respective owners.</p></footer></body></html>;
+}

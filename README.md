@@ -79,3 +79,7 @@ WhatsApp enquiries now use 601160676283. Homlux was removed at the owner’s req
 The owner confirmed on 9 October 2026 that 15 clubs conduct meetings in English and Kelab Toastmasters Bahasa Melayu Johor Darul Ta’zim conducts meetings in Bahasa Melayu. Mandarin content is outreach for Chinese-speaking prospective visitors, not a claim of Mandarin meetings. Language filters, club pages, FAQs, visitor guidance and outreach copy reflect these confirmed languages.
 
 The Journal menu retains its name and includes two Mandarin articles and two Bahasa Melayu articles alongside the English guides. Article pages declare their content language and use localized visitor calls to action.
+
+## Google Analytics 4
+
+Set NEXT_PUBLIC_GA_MEASUREMENT_ID to the owner’s GA4 web stream ID (G-...) in Vercel Production and redeploy. Invalid or absent IDs leave analytics disabled. Google tag loads after the page becomes interactive. Enable Enhanced measurement, including browser history page changes, in the GA4 web stream to measure Next.js navigation; no manual page-view handler is added to duplicate that tracking. WhatsApp links emit whatsapp_enquiry_click with the page path, not the phone number or draft message. This event measures a button click, not a sent message or confirmed lead. Configure it as a key event in GA4 if desired. Verify events in Realtime/DebugView after supplying the ID.

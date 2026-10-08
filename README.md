@@ -22,7 +22,7 @@ Open http://localhost:3000. Commit the generated package-lock.json after install
 
 ## Update content
 
-Edit `lib/content.ts`. `clubs` intentionally starts empty until the current Division G roster is supplied. For each verified club add a unique URL-safe slug, name, current area, city, language, format (`In person`, `Online`, or `Hybrid`), meeting schedule, venue, description, public HTTPS website/contact link, and verification date. Meeting times are Malaysia time. Avoid publishing private contact information. Club pages are generated automatically.
+Edit `lib/content.ts`. `clubs` contains the 17 clubs from the supplied Division G roster, with club numbers preserved as strings. Location, language, format, schedule, venue, and public contacts remain optional until confirmed. For each verified club add a unique URL-safe slug, name, current area, city, language, format (`In person`, `Online`, or `Hybrid`), meeting schedule, venue, description, public HTTPS website/contact link, and club number. Meeting times are Malaysia time. Avoid publishing private contact information. Club pages are generated automatically.
 
 The `posts` array contains original introductory articles. Add articles with unique slugs, titles, categories, read times, summaries, and paragraph arrays. Changes publish through GitHub commits; there is no admin dashboard or database in this first version.
 

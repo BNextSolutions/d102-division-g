@@ -1,7 +1,7 @@
 export type SocialFeed = { id:string; title:string; platform:'facebook'|'instagram'; url:string };
 // Add owner-supplied public Facebook Page URLs or Instagram post/reel URLs.
 // The order below is the display order; do not infer post dates from this order.
-export const socialFeeds:SocialFeed[]=[];
+export const socialFeeds:SocialFeed[]=[{id:'division-g-facebook',title:'District 102 Division G · Meeting updates',platform:'facebook',url:'https://www.facebook.com/tmd102divg'}];
 export function socialEmbedUrl(feed:SocialFeed):string|null{
   try{
     const url=new URL(feed.url);

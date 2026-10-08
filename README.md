@@ -6,6 +6,19 @@ Live site: https://d102-division-g.vercel.app
 
 Public repository: https://github.com/BNextSolutions/d102-division-g
 
+## Visual branding
+
+Aligned to the Toastmasters International Brand Manual, version 2.0 (August 2026): https://content.toastmasters.org/image/upload/02330-001-0001-brand-manual.pdf.
+
+- Primary colors: Loyal Blue `#004165` and True Maroon `#772432`.
+- Accent colors: Cool Gray `#A9B2B1` and Happy Yellow `#F2DF74`.
+- Approved Loyal Blue gradient: `#004165` to `#006094`; neutral background `#F5F5F5`.
+- Montserrat headings and Source Sans 3 body copy are the manual's free alternatives to Gotham and Myriad Pro. Fonts are served locally by Next.js font optimization.
+- Official Toastmasters logo is referenced from its official website, with preserved proportions, a width above the 72px minimum, and clear space. The custom Division G logo and decorative letter artwork were removed.
+- Official tagline and website disclaimer are included. This implementation is not a claim of review or endorsement by Toastmasters International.
+
+The production build and desktop/mobile browser checks passed, including font and logo loading and no horizontal overflow on the home, directory, journal, club, and article pages.
+
 ## Run locally
 
 Requires Node.js 20.9 or newer.

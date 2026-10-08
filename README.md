@@ -19,6 +19,16 @@ Aligned to the Toastmasters International Brand Manual, version 2.0 (August 2026
 
 The production build and desktop/mobile browser checks passed, including font and logo loading and no horizontal overflow on the home, directory, journal, club, and article pages.
 
+## Johor SEO and visitor enquiries
+
+The site targets Toastmasters club discovery in Johor, Malaysia. Each page has its own title, description, canonical URL, and social metadata. Organization, WebSite, club Organization, directory ItemList, and visible FAQ structured data describe confirmed facts without invented venues, reviews, schedules, or prices. `/sitemap.xml` lists 25 content pages and `/robots.txt` allows crawling.
+
+The `/visit` page helps prospective members choose a club, confirm arrangements, and prepare an enquiry. A direct WhatsApp/email enquiry destination is pending the owner's public contact details; the current journey points to the official club finder. No enquiry form claims to submit or stores personal data.
+
+For AI search (GEO), the site uses clear regional identity, visible answers, linked club records, and matching structured data. No AI placement or search ranking is guaranteed. Follow-up: provide public club contact links and verified meeting details, connect Google Search Console and submit the sitemap, and measure enquiries once a destination is configured. The sitemap is available without a Search Console integration.
+
+Reference: https://developers.google.com/search/docs/fundamentals/ai-optimization-guide.
+
 ## Run locally
 
 Requires Node.js 20.9 or newer.
@@ -54,3 +64,4 @@ Before public launch, confirm official Division G status and branding, verify cl
 ## Verification status
 
 Dependency installation completed with zero reported vulnerabilities. TypeScript checking and the Next.js 16.4.0 production build passed locally and on Vercel. The generated package-lock.json records the installed versions. Desktop and mobile browser checks passed, including directory interaction, no mobile horizontal overflow, and no observed runtime errors. All seven content routes returned HTTP 200 locally; unknown club/page routes returned HTTP 404. The production homepage returned HTTP 200 without authentication. Vercel is connected to the GitHub repository for future deployments.
+

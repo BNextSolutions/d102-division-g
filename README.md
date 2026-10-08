@@ -23,7 +23,7 @@ The production build and desktop/mobile browser checks passed, including font an
 
 The site targets Toastmasters club discovery in Johor, Malaysia. Each page has its own title, description, canonical URL, and social metadata. Organization, WebSite, club Organization, directory ItemList, and visible FAQ structured data describe confirmed facts without invented venues, reviews, schedules, or prices. `/sitemap.xml` lists 25 content pages and `/robots.txt` allows crawling.
 
-The `/visit` page helps prospective members choose a club, confirm arrangements, and prepare an enquiry. Visitor enquiries go to the owner's supplied public WhatsApp number, +60 10-270 1823. Homepage, visitor page, club pages, and footer links open prefilled drafts; club drafts include the club name and number. The number is a Division G enquiry contact, not a claimed direct number for every club. No enquiry form claims to submit or stores personal data.
+The `/visit` page helps prospective members choose a club, confirm arrangements, and prepare an enquiry. Visitor enquiries go to the owner's supplied public WhatsApp number, +60 11-6067 6283. Homepage, visitor page, club pages, and footer links open prefilled drafts; club drafts include the club name and number. The number is a Division G enquiry contact, not a claimed direct number for every club. No enquiry form claims to submit or stores personal data.
 
 For AI search (GEO), the site uses clear regional identity, visible answers, linked club records, and matching structured data. No AI placement or search ranking is guaranteed. Follow-up: provide public club contact links and verified meeting details, connect Google Search Console and submit the sitemap, and measure enquiries through the supplied WhatsApp destination. The sitemap is available without a Search Console integration.
 
@@ -69,3 +69,7 @@ Dependency installation completed with zero reported vulnerabilities. TypeScript
 ## Club workbook import
 
 Meeting schedules, meeting modes, listed locations, and membership access for 16 clubs were imported on 8 October 2026 from the owner-supplied workbook (https://docs.google.com/spreadsheets/d/183qVX__qCmhieQdi8r0YPvSnIdlf-hRv/edit). Names and numbers match the existing roster. The detailed By Day tab provides times and membership access; SY provides club numbers. Homlux is absent and remains pending. FLEX frequency and Johor Jaya venue conflicts are explicitly flagged. Iskandar Puteri is listed as online with a reference address, not a confirmed walk-in venue. Facebook page names are displayed without invented URLs. Meeting languages are not supplied. The workbook itself is not committed.
+
+## 9 October 2026 update
+
+WhatsApp enquiries now use 601160676283. Homlux was removed at the owner’s request; the directory and sitemap contain 16 clubs. The homepage includes Mandarin and Bahasa Melayu invitations with language-specific WhatsApp drafts. These invitations encourage language practice, communication and leadership without assigning unconfirmed meeting languages to clubs. The externally managed Google My Maps remains maintained by its owner.

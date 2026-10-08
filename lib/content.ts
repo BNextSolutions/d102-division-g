@@ -1,7 +1,7 @@
 import clubDetails from './club-details.json';
 export type Club = { slug: string; number: string; name: string; area: string; city?: string; language?: string; format?: 'In person' | 'Online' | 'Hybrid' | 'Online & in person' | 'Online & hybrid'; meeting?: string; venue?: string; description?: string; website?: string; membership?: string; meetingNote?: string; socialName?: string; sourceDate?: string };
 // Names, club numbers, and areas transcribed from the roster supplied on 8 October 2026.
-// Meeting arrangements and public contacts have not yet been supplied.
+// Homlux removed on 9 October 2026 per the owner; meeting details come from the supplied workbook.
 const roster: Club[] = [
   { slug: 'technipfmc-nj', number: '04329121', name: 'TechnipFMC NJ Toastmasters', area: '01' },
   { slug: 'flex-ptp', number: '07430237', name: 'FLEX PTP TOASTMASTERS CLUB', area: '01' },
@@ -11,7 +11,6 @@ const roster: Club[] = [
   { slug: 'utm', number: '01329493', name: 'UTM Toastmasters Club', area: '02' },
   { slug: 'iskandar-puteri', number: '01475566', name: 'Iskandar Puteri Toastmasters Club', area: '02' },
   { slug: 'sutera-utama', number: '07474313', name: 'Sutera Utama Toastmasters Club', area: '02' },
-  { slug: 'homlux', number: '28678982', name: 'Homlux Toastmasters Club', area: '02' },
   { slug: 'mim-johor-bahru', number: '00001888', name: 'MIM Toastmasters Club of Johor Bahru', area: '03' },
   { slug: 'johor-jaya', number: '00002196', name: 'Johor Jaya Toastmasters Club', area: '03' },
   { slug: 'cima-johor', number: '00798899', name: 'CIMA Johor Toastmasters', area: '03' },

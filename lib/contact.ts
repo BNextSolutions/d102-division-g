@@ -1,5 +1,5 @@
-export const whatsappNumber = '60102701823';
-export const contactDisplay = '+60 10-270 1823';
+export const whatsappNumber = '601160676283';
+export const contactDisplay = '+60 11-6067 6283';
 export function whatsappUrl(club?: {name:string;number:string}) {
   const message = club
     ? `Hello Division G, I'm interested in visiting ${club.name} (club ${club.number}) in Johor, Malaysia. Could you help me confirm the next meeting and guest arrangements?`

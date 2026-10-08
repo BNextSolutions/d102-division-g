@@ -2,6 +2,10 @@
 
 Next.js App Router + TypeScript directory and blog. Responsive layouts, directory search and area/language/format filters, club detail pages, journal articles, page metadata, and accessible navigation. Original editorial content; no copied district articles or unverified clubs.
 
+Live site: https://d102-division-g.vercel.app
+
+Public repository: https://github.com/BNextSolutions/d102-division-g
+
 ## Run locally
 
 Requires Node.js 20.9 or newer.
@@ -36,4 +40,4 @@ Before public launch, confirm official Division G status and branding, verify cl
 
 ## Verification status
 
-Dependency installation completed with zero reported vulnerabilities. TypeScript checking and the Next.js 16.4.0 production build passed. The generated package-lock.json records the installed versions. Browser QA and Vercel deployment are tracked separately; Vercel requires account sign-in.
+Dependency installation completed with zero reported vulnerabilities. TypeScript checking and the Next.js 16.4.0 production build passed locally and on Vercel. The generated package-lock.json records the installed versions. Desktop and mobile browser checks passed, including directory interaction, no mobile horizontal overflow, and no observed runtime errors. All seven content routes returned HTTP 200 locally; unknown club/page routes returned HTTP 404. The production homepage returned HTTP 200 without authentication. Vercel is connected to the GitHub repository for future deployments.

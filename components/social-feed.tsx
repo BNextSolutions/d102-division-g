@@ -1,7 +1,9 @@
 'use client';
+import {copy,type Locale} from '@/lib/languages';
 import {useEffect,useRef,useState} from 'react';
 import {socialEmbedUrl,type SocialFeed} from '@/lib/social-feeds';
-export default function SocialFeedCard({feed}:{feed:SocialFeed}){
+export default function SocialFeedCard({feed,locale="en"}:{feed:SocialFeed;locale?:Locale}){
+  const t=copy[locale];
   const card=useRef<HTMLElement>(null);
   const [width,setWidth]=useState(0);
   const [reload,setReload]=useState(0);
@@ -9,5 +11,5 @@ export default function SocialFeedCard({feed}:{feed:SocialFeed}){
   const embed=socialEmbedUrl(feed,width||500);
   if(!embed)return null;
   const platform=feed.platform==='facebook'?'Facebook':'Instagram';
-  return <article ref={card} className="social-card"><div className="social-card-heading"><p className="eyebrow">{platform}</p><h3>{feed.title}</h3><a className="text-link" href={feed.url} target="_blank" rel="noreferrer">Open on {platform} ↗</a><p><button type="button" className="button compact" onClick={()=>setReload(value=>value+1)}>Reload feed</button></p></div>{width>0&&<iframe key={reload} title={`${feed.title} on ${platform}`} src={embed} loading="eager" allow="encrypted-media; picture-in-picture; fullscreen" allowFullScreen referrerPolicy="strict-origin-when-cross-origin"/>}<p className="fine">If the feed is blank, try Reload feed or open it on {platform}. Browser privacy settings, content blockers, and {platform} sharing settings can affect visibility.</p></article>;
+  return <article ref={card} className="social-card"><div className="social-card-heading"><p className="eyebrow">{platform}</p><h3>{feed.title}</h3><a className="text-link" href={feed.url} target="_blank" rel="noreferrer">{feed.platform==="facebook"?t.openSocial:`Open on ${platform}`} ↗</a><p><button type="button" className="button compact" onClick={()=>setReload(value=>value+1)}>{t.reload}</button></p></div>{width>0&&<iframe key={reload} title={`${feed.title} on ${platform}`} src={embed} loading="eager" allow="encrypted-media; picture-in-picture; fullscreen" allowFullScreen referrerPolicy="strict-origin-when-cross-origin"/>}<p className="fine">{t.socialNote}</p></article>;
 }

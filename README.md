@@ -87,3 +87,7 @@ Set NEXT_PUBLIC_GA_MEASUREMENT_ID to the owner’s GA4 web stream ID (G-...) in 
 ## Club Facebook updates
 
 The Latest meeting route was removed. Division G Facebook is linked in the footer. Club social URLs in lib/club-facebook.json come from the owner-supplied workbook https://docs.google.com/spreadsheets/d/19F_IbelaU17sza850oG-SOXCHX8Wu2QN/edit (9 October 2026), matched by club number. Eleven Pages use the responsive Facebook timeline component; three Groups use direct links because the Page plugin does not support Groups. FLEX PTP and MMHE have no supplied Facebook URL. Embeds have external fallback links and depend on Facebook public visibility and embed settings. No paid widget or extra dependency is required.
+
+## Website languages
+
+English uses the existing routes; Chinese and Malay use /zh and /ms prefixes. The header language selector preserves the current page and loads its language version, including server-rendered navigation and HTML language. The localized route renders translated main pages, directory filters, meeting labels and source warnings. Club names, street addresses, Facebook content and Journal articles retain their published language. Canonical links, hreflang and sitemap entries cover all three versions. The request proxy sets the locale for the root layout; pages now render on demand. Chinese and Malay use system script fallbacks alongside the existing brand fonts.

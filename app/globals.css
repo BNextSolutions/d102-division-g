@@ -23,3 +23,5 @@ footer{max-width:1400px;margin:auto;padding:40px 5%;border-top:1px solid var(--l
 .why-articles{margin-top:56px}header nav{flex-wrap:wrap;column-gap:18px;row-gap:10px}
 
 .council-section{margin:40px 0}.council-poster{margin:24px 0}.council-poster img{display:block;width:100%;height:auto;border-radius:4px}.council-poster figcaption{font-size:14px;line-height:1.7;margin-top:14px}
+
+header{flex-wrap:wrap}header .language-options{width:auto;gap:10px;font-size:13px}.language-options a{padding:7px;border:1px solid var(--line);border-radius:4px;white-space:nowrap}.language-options a[aria-current="page"]{background:var(--navy);color:white}.detail-pair{display:contents}footer>div:nth-child(2){flex-wrap:wrap}html[lang="zh-Hans"]{--body:var(--font-source-sans),"Microsoft YaHei","PingFang SC",sans-serif;--heading:var(--font-montserrat),"Microsoft YaHei","PingFang SC",sans-serif}

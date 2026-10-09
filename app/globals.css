@@ -19,3 +19,5 @@ footer{max-width:1400px;margin:auto;padding:40px 5%;border-top:1px solid var(--l
 .social-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;margin:40px 0}.social-card{border:1px solid var(--line);border-top:4px solid var(--maroon);border-radius:4px;overflow:hidden;max-width:500px;width:100%;justify-self:center}.social-card-heading{padding:24px}.social-card-heading h3{font-size:22px}.social-card iframe{width:100%;height:600px;display:block;border:0}.social-card>.fine{padding:16px 24px;margin:0}.empty .actions{justify-content:center;flex-wrap:wrap}@media(max-width:640px){.social-grid{grid-template-columns:1fr}nav{flex-wrap:wrap;justify-content:center;column-gap:22px;row-gap:14px}}
 
 .club-social{margin:40px 0}.club-social .social-card{margin:24px auto}
+
+.why-articles{margin-top:56px}header nav{flex-wrap:wrap;column-gap:18px;row-gap:10px}

@@ -1,0 +1,7 @@
+import Link from 'next/link';
+import SocialFeedCard from '@/components/social-feed';
+import {pageMetadata} from '@/lib/seo';
+import {whatsappUrl,contactDisplay} from '@/lib/contact';
+
+export const metadata=pageMetadata('Connect with Toastmasters Division G in Johor','Follow District 102 Division G on Facebook for community updates and contact us to explore Toastmasters club visits in Johor, Malaysia.','/connect-with-us');
+export default function ConnectWithUs(){return <section className="section article"><p className="eyebrow">DISTRICT 102 · DIVISION G · JOHOR, MALAYSIA</p><h1>Connect with Us</h1><p className="intro">Follow our Division G community on Facebook for meeting announcements, club activities and updates from Toastmasters in Johor.</p><section className="club-social" aria-label="Division G Facebook feed"><SocialFeedCard feed={{id:'division-g-facebook',title:'Toastmasters District 102 Division G',platform:'facebook',url:'https://www.facebook.com/tmd102divg'}}/></section><div className="prose"><h2>Let’s plan your first visit</h2><p>Tell us where you are in Johor and what you would like to practise. We can help you explore clubs and enquire about visitor arrangements.</p><p><a className="button" href={whatsappUrl()} target="_blank" rel="noreferrer">WhatsApp {contactDisplay} ↗</a></p><p><Link className="text-link" href="/clubs">Explore the club directory →</Link></p></div></section>;}
